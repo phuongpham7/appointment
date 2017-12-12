@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Appointment Application</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="assets/apptlayout.css">
+
+		<!--CSS from jqueryui for time and date display on all browsers -->
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.min.css">
+		<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/ui-lightness/jquery-ui.min.css">
+	</head>
+	<body>
+		<div class="appt-new">
+			<form class="appt-form" action="app.pl" method="post">
+				<div class="form-row">
+					<label>Date:</label>
+					<input class="appt-date" placeholder="MM/DD/YY" type="text" required="required" name="dateField" />
+					<input type="hidden" name="date"  />
+				</div>
+				<div class="form-row">
+					<label>Time:</label>
+					<input class="appt-time" type="text" placeholder="HH:MM AM/PM" required="required" name="timeField" class="appt-time" />
+				</div>
+				<div class="form-row">
+					<label>Description:</label>
+					<textarea name="description" required="required" rows="4"></textarea>
+				</div>
+			</form>
+			<button class="button-new">New</button>
+			<button class="button-cancel">Cancel</button>
+			<div class="form-row">
+				<div class="search-box">
+					<input type="text" placeholder="Search" name="search" />
+				</div>
+				<div class="search-button">
+					<button name="search">Search</button>
+				</div>
+			</div>
+		</div>
+		<div class="appt-list">
+			<table class="tblAppt"></table>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.min.js"></script>
+		<script type="text/javascript" src="assets/webapp.js"></script>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+label {
+    text-align: left;
+    clear: both;
+    float:left;
+	margin-right:15px;
+	width:100px;
+}
+textarea { width: 200px; }
+.appt-date, .appt-time { width: 200px;}
+.search-box { width:250px; float:left; }
+.search-box input { width:95%; }
+.form-row { margin-top: 10px; }
+.tblAppt tr:nth-child(even) { background-color: lightgray; }
+.tblAppt {
+	margin-top: 10px;
+	width: 100%;
+	border-collapse:collapse;
+	border-spacing: 5px 10px;
+	font-size: 12px;
+	font-family: verdana;
+}
+.tblAppt thead{
+	background-color:rgb(3, 36, 61);color:white;text-align:left;
+}
+button.button-cancel,form.appt-form { display:none; }
